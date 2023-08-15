@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Assignment 13 Jquery Animation</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1400/1400310.png" type="image/x-icon">
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-image: url(img/bg.jpg);
+			background-size: cover;
+			/* Scale the image to cover the entire container */
+			background-repeat: no-repeat;
+			/* Prevent image repetition */
+			background-attachment: fixed;
+			background-color: rgba(0, 0, 0, 0.5);
+			background-blend-mode: darken;
+		}
+	</style>
+</head>
+
+<body>
+	<section>
+		<h1 id="intro" style="color: white; text-align: center;"></h1>
+		<div class="tabs">
+			<button class="tab-button active" data-tab="tab1"> ডিম</button>
+			<button class="tab-button" data-tab="tab2">কুপন আনলক</button>
+			<button class="tab-button" data-tab="tab3">ভোরের সূর্য</button>
+			<button class="tab-button" data-tab="tab4">সূর্য ঘোরে
+			</button>
+
+		</div>
+		<div class="tab-content" id="tab1">
+			<div>
+				<!-- Fade Toggle -->
+
+
+				<div id="dim">
+					<div id="cool1">
+						<div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe
+								src="https://giphy.com/embed/WmiF4LR8auigTmLhZD" width="100%" height="100%"
+								style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+						</div>
+						<p><a href="https://giphy.com/gifs/easter-egggang-worldrecordegg-WmiF4LR8auigTmLhZD"></a></p>
+					</div>
+					<div id="cool2">
+						<div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe
+								src="https://giphy.com/embed/WmiF4LR8auigTmLhZD" width="100%" height="100%"
+								style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+						</div>
+					</div>
+					<div id="cool3">
+						<div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe
+								src="https://giphy.com/embed/WmiF4LR8auigTmLhZD" width="100%" height="100%"
+								style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+						</div>
+					</div>
+
+				</div>
+				<div style="">
+					<button id="fadetoggle"> ডিম এর অবস্থা পরিবর্তন </button>
+				</div>
+
+			</div>
+		</div>
+		<div class="tab-content" id="tab2">
+			<div id="coupon">
+				<div id="flip"> Click here <br> to check yout Luck!!</div> <br>
+				<div id="panel">Congratulation's Dear user.
+					<br> You have Won 1 Lakh taka !! YAY
+				</div>
+			</div>
+		</div>
+		<div class="tab-content" id="tab3">
+			<div id="rocket">
+				<div id="boom"></div>
+				<div><button
+						style="margin-left: 650px; background-color: blueviolet; color: white; font-weight: 800; border-radius: 20px;"
+						id="animate">Expand your Day</button></div>
+			</div>
+		</div>
+		<div class="tab-content" id="tab4">
+			<div>
+
+
+				<div id="fit">
+					<p id="spin">🌞</p>
+				</div>
+				<button class="btn" id="start-animation">ক্লিক করে দৃশ্যপট বড় করতে থাকুন।</button>
+				<button class="btn" id="stop-animation">ক্লিক করে দ্রশ্যপট বড় করা কে আটকে দিন </button>
+			</div>
+		</div>
+
+
+	</section>
+
+	<!-- ====================================== -->
+
+	<script src="https://code.jquery.com/jquery-3.7.0.min.js"
+		integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+	<script src="js/jquery.js"></script>
+</body>
+
+</html>

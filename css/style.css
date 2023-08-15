@@ -1,0 +1,308 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#fadetoggle{
+	top: 300px;
+	margin: 	auto;
+display: block;
+padding: 10px 25px;
+background: rgb(255, 255, 255);
+color: rgb(229, 0, 0);
+border-radius: 10px;
+}
+#fadetoggle:hover{
+	background: tomato;
+	color: white;
+}
+
+#cool1, #cool2, #cool3{
+	margin-top: 200px;
+    width: 200px;
+    
+}
+
+#dim{
+	display: flex;
+	
+	justify-content: center;
+}
+
+/* Click to Slide  */
+#coupon{
+	margin-top: 300px;
+	margin-left: 200px;
+	display: flex;
+	justify-content: center;
+	width: 60%;
+}
+#flip, #panel{
+border-radius: 60px;
+text-align: center;
+background: rgb(242, 242, 242);
+border: 1px solid rgb(230, 23, 99);
+}
+#flip{
+	padding: 10px;
+    cursor: pointer;
+	background-color: yellow;
+	text-align: center;
+	font-weight: 800;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#panel{
+    padding: 40px;
+    display: none;
+}
+
+/* Click to animate  */
+#rocket{
+	background-image: radial-gradient(circle 150px at 25% 33%, white, yellow, lightyellow, aqua);
+	margin: 0	auto;
+	/* padding: 50px; */
+	
+	/* border: 1px solid yellowgreen; */
+	width: 60%;
+	height: 0%;
+}
+#animate{
+	width: 142px;
+	padding: 10px
+}
+#boom{
+    
+    width: 100px;
+    height: 50px;
+    border: 1px dotted yellow;
+	border-radius: 50px;
+    color: white;
+}
+
+
+/* Advance Animation with JQuery */
+#spin{
+	animation: spin 5s linear infinite;
+	/* Apply the animation */
+	font-size: 5em;
+}
+/* Define the animation */
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.btn{
+	margin: 40px;
+	padding: 10px;
+	background-color: rgb(206, 3, 138);
+	color: white;
+	font-weight: 600;
+	border-radius: 7px 50px;
+}
+.btn:hover{
+	background: white;
+	color: rgb(171, 45, 75);
+}
+#fit{
+	
+    width: 150px;
+    height: 150px;
+    /* background: red; */
+	background: linear-gradient(to bottom, #071B26 0%,#071B26 30%,#8A3B12 80%,#240E03 100%); 
+
+    color: white;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .tab-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(161, 7, 167);
+    cursor: pointer;
+    color: white;
+    flex: 1;
+  }
+  
+  
+  .tab-button.active {
+    background-color: #ccc;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .tab-content {
+    display: none;
+  }
+
+  /* btn style  */
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .button {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: steelblue;
+    color: white;
+    font-weight: bold;
+    border: 1px solid steelblue;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .button:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .button-icon {
+    margin-right: 5px;
+  }
+  /* btn style  */
+  
+
+  /* tab style  */
+  #tab1{
+    /* border: 2px dashed white; */
+    
+  }
+  /* tab style  */
+
+  @media (max-width: 768px) {
+    .tabs {
+      flex-direction: column;
+      align-items: stretch;
+      padding: 0;
+    }}
+
+
+    /* img rsponsive  */
+    .cool{
+        max-width: 100%;
+        height: auto;
+    }
+    /* img rsponsive  */
+
+
+    /* typewritter effect */
+    /* Add styling for the cursor */
+.typewriter-cursor {
+    display: inline-block;
+    width: 8px;
+    height: 18px;
+    background-color: black;
+    animation: blink-caret 0.75s step-end infinite;
+  }
+  
+  @keyframes blink-caret {
+    from, to {
+      background-color: transparent;
+    }
+    50% {
+      background-color: black;
+    }
+  }
+  
+    /* typewritter effect */
+
+
+    
+    
+    /* pata gayeb effect  */
+#fiti{
+    border: 2px dotted steelblue;
+    
+    max-width: 100%;
+    height: auto;
+    
+}
+#pata-section{
+    text-align: center;
+}
+    /* pata gayeb effect  */
+
+
+
+    /* Alert tab 3 style  */
+    .red-box {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+        border-radius: 100px;
+        margin: 200px auto 0;
+        width: 200px;
+        height: 200px;
+        background-color: tomato;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin: 0 auto; Center the box horizontally */
+      }
+      .red-box:hover{
+        background-color: black;
+      }
+    
+      .danger-text {
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+      }
+    /* Alert tab 3 style  */
+
+
+    /* Tab 4 Bilai Style  */
+    #bilai {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        margin: 0 auto;
+      }
+    
+      #bilai img {
+        width: 100%;
+        height: auto;
+      }
+    /* Tab 4 Bilai Style  */
+
+
+    /* Tab 5 Bhoot Style  */
+    .center-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20vh;
+        margin: 0   auto;
+        margin-top: 15%;
+      }
+    
+      .image-container {
+        display: inline-block;
+        border: 2px solid #fff7f7; /* Adjust the border color as needed */
+      }
+    
+      .center-image {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    /* Tab 5 Bhoot Style  */
+    
